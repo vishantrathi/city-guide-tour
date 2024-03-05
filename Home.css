@@ -1,68 +1,106 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: se-resize;
 }
 
+html{
+  scroll-behavior: smooth 
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  opacity: 1;
+  
+/*  where the real magic happens  */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  
+  background: rgba(225, 225, 225, 0.05);
+  
+  mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
+  
+  -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
+  inset: -1rem 0;
+}
+
+
 .logo{
-    padding-top: 15px;
-    margin-top: 4px;
-    border-radius: 50%;
+  padding-top: 15px;
+  margin-top: 4px;
+  border-radius: 50%;
 }
 
 .nav{
-    display: flex;
-    padding-left: 30px;
-    line-height: 40px;
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: italic;
-    margin-top: 7px;
-      
+  display: flex;
+  padding-left: 30px;
+  line-height: 40px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 7px;
+    
 }
 
 .nav ul{
-    display: flex;
-    gap: 20px;
-    padding-top: 15px;
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
 }
 
 .nav ul li{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .nav ul li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 400;
-    margin-right: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 30px;
 }
 
 .nav >a{
-    padding-right: 40px;
+  padding-right: 40px;
 }
 
 .nav ul li a:hover{
-    color: #000;
-    padding:5px 5px;
+  color: #000;
+  padding:5px 5px;
+}
+
+.classh3{
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  padding: 20px;
+  padding-bottom: 13px;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+
 }
 
 
 .banner{
-    padding-top: 30px; 
-    padding: 20px;
-    position: relative;
-    display: flex; 
-    align-items: center;
+  padding-top: 30px; 
+  padding: 20px;
+  position: relative;
+  display: flex; 
+  align-items: center;
 }
 
 .banner img{
-    width: 300px;
-    padding: 20px;
-    border-radius: 39px;
-    text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 39px;
+  text-align: center;
 }
+
 .icon{
     margin-left: auto;
 }
