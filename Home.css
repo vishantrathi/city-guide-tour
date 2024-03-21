@@ -9,26 +9,6 @@ html{
   scroll-behavior: smooth 
 }
 
-.backdrop {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  opacity: 1;
-  
-/*  where the real magic happens  */
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  
-  background: rgba(225, 225, 225, 0.05);
-  
-  mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
-  
-  -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
-  inset: -1rem 0;
-}
-
 
 .logo{
   padding-top: 15px;
@@ -280,3 +260,15 @@ html{
     padding: 12px 50px;
   }
 }
+
+.section{
+  gap: 10px;
+}
+/* Footer Styles */
+.footer1{
+  display: list-item;
+  height: 100px;
+  background-color: aliceblue;
+}
+
+
